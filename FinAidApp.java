@@ -1,8 +1,6 @@
 
 /**
- * Calculates qualified financial aid for Brandeis HSP Applicants 
- * (This program takes care of step #4 on the DO google task for Processing Financial Aid Applications)
- * 
+ * Calculates qualified financial aid 
  * @author Vanessa Chalem
  * @version 1/2/14
  */
@@ -78,14 +76,14 @@ public class FinAidApp{
           return inCollege;
     }
 
-    //prompts user for family’s State of Legal Residence
+    //prompts user for familyâ€™s State of Legal Residence
     public static String stateOfResidence(Scanner in){
         System.out.println("Enter the State of Legal Residence as found in address portion of US 1040 if int'l use MA");
         String state = in.next();
         return state;
     }
 
-    //prompts user for family’s Adjusted Gross Income
+    //prompts user for familyâ€™s Adjusted Gross Income
     public static int grossIncome(Scanner in){
         System.out.println("Enter the Adjusted Gross Income which is the number from tax form US1040 field 37:");
         int income = in.nextInt();
